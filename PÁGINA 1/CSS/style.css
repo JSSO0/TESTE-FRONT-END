@@ -27,9 +27,14 @@
 
 
 .logo {
+    /*  margin-top: 3%;
+    margin-left: 6%;*/
+    margin-bottom: 3%;
+}
+
+.logo1 {
     margin-top: 3%;
     margin-left: 6%;
-    margin-bottom: 5%;
 }
 
 /*botao*/
@@ -105,14 +110,31 @@
 /*texto*/
 
 .legenda {
-    margin-top: 10%;
+    margin-top: 8%;
     width: 30%;
     height: auto;
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* border: 3px solid #000000;*/
+    margin-left: 6%;
+
+}
+
+.barra00 {
+ /*   margin-top: 2%;*/
+    margin-bottom: 8%;
+    width: 100%;
+    height: auto;
+}
+
+.legenda23 {
+    border: 3px solid #000000;
+    margin-bottom: 5%;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    border: 3px solid #000000;
-    margin-left: 6%;
+    padding-right: 8%;
 }
 
 .legenda h3 {
@@ -128,7 +150,7 @@
 
 /*segunda página*/
 .fundoz {
-   /* position: relative;*/
+    /* position: relative;*/
     margin-top: -15%;
     float: right;
 }
@@ -226,9 +248,10 @@
 }
 
 
-.legenda1{
+.legenda1 {
     border-bottom: 0.5px solid #000000;
 }
+
 .legenda1 h2 {
     font-family: 'Montserrat', sans-serif;
     font-family: 18px;
@@ -247,7 +270,7 @@
     font-weight: 900;
 }
 
-.legenda2{
+.legenda2 {
     border-bottom: 0.5px solid #000000;
 }
 
@@ -272,9 +295,10 @@
 
 
 
-.legenda3{
+.legenda3 {
     border-bottom: 0.5px solid #363636;
 }
+
 .legenda3 h2 {
     font-family: 'Montserrat', sans-serif;
     font-family: 18px;
@@ -300,4 +324,3 @@
     margin-right: 2%;
 
 }
-
