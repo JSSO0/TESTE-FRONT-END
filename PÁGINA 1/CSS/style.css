@@ -23,7 +23,6 @@
     /* position: fixed;*/
     width: 100%;
     height: 100%;
-
 }
 
 
@@ -128,12 +127,17 @@
 }
 
 /*segunda página*/
+.fundoz {
+   /* position: relative;*/
+    margin-top: -15%;
+    float: right;
+}
 
 .fundo2 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    margin-top: 3%;
+    margin-top: 7%;
 }
 
 .titulo h3 {
@@ -221,6 +225,10 @@
     margin-top: 3%;
 }
 
+
+.legenda1{
+    border-bottom: 0.5px solid #000000;
+}
 .legenda1 h2 {
     font-family: 'Montserrat', sans-serif;
     font-family: 18px;
@@ -237,6 +245,10 @@
 
 .legenda1 a {
     font-weight: 900;
+}
+
+.legenda2{
+    border-bottom: 0.5px solid #000000;
 }
 
 .legenda2 h2 {
@@ -257,10 +269,12 @@
     font-weight: 900;
 }
 
-/*
+
+
+
 .legenda3{
-    font-size: 18px;
-}*/
+    border-bottom: 0.5px solid #363636;
+}
 .legenda3 h2 {
     font-family: 'Montserrat', sans-serif;
     font-family: 18px;
@@ -280,8 +294,10 @@
 }
 
 .fundo3 {
+    margin-left: 3%;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 5%;
+    margin-right: 2%;
 
 }
+
