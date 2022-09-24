@@ -4,41 +4,13 @@
  
 }
 .slider{
-  overflow: hidden;
-  width: 100%;
-  height: 280px;
-  position: relative;
-}
-figure{
-  width: 100%;
+width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  transition: all 3s linear;
-  animation: 20s slidy infinite ;
-}
-.slide{
-  width: 20%;
-  height: 100%;
-  float: left;
+  background: red;
   position: relative;
+  animation: mymove 5s infinite;
 }
-.slidee{
-  width: 20%;
-  height: 100%;
-  float: right;
-  position: relative;
-}
-.slide img{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 227px;
-  height: 227px;
-}
-
+/*
 @keyframes slidy {
   0%{
     left:0;
@@ -53,25 +25,32 @@ figure{
     left: -300%;
   }
   40%{
-    left: -400%;
-  }
-  50%{
-    left: -400%;
-  }
-  60%{
     left: -300%;
   }
-  70%{
+  50%{
+    left: -300%;
+  }
+  60%{
     left: -200%;
   }
-  85%{
+  70%{
     left: -100%;
+  }
+  85%{
+    left: 0%;
   }
   100%{
     left: 0%;
   }
 
+}*/
+
+
+@keyframes mymove {
+  from {left: 0%;}
+  to {right: 100%;}
 }
+
 
 .alinhamento{
   background-color: black;
