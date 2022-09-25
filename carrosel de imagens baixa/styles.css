@@ -1,57 +1,120 @@
-*{
+* {
   margin: 0;
   padding: 0;
- 
+  background-color: black;
 }
-.slider{
-width: 100%;
-  height: 100%;
-  background: red;
+
+.imagens{
+  position: absolute;
+  display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.direita{
+  background-image: url(./IMAGENS/imagem.svg);
   position: relative;
-  animation: mymove 5s infinite;
+  animation: mymove 8s infinite;
+  margin-bottom: 1%;
 }
-/*
-@keyframes slidy {
-  0%{
-    left:0;
-  }
-  10%{
-    left: -100%;
-  }
-  20%{
-    left: -200%;
-  }
-  30%{
-    left: -300%;
-  }
-  40%{
-    left: -300%;
-  }
-  50%{
-    left: -300%;
-  }
-  60%{
-    left: -200%;
-  }
-  70%{
-    left: -100%;
-  }
-  85%{
-    left: 0%;
-  }
-  100%{
-    left: 0%;
-  }
-
-}*/
-
+.esquerda{
+  background-image: url(./IMAGENS/imagem.svg);
+  position: relative;
+  animation: mymovee 8s infinite;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 1%;
+}
 
 @keyframes mymove {
-  from {left: 0%;}
-  to {right: 100%;}
+  0% {
+    right: 0%;
+  }
+
+  10% {
+    right: 5%;
+  }
+
+  20% {
+    right: 10%
+  }
+
+  30% {
+    right: 20%
+  }
+
+  40% {
+    right: 30%
+  }
+
+  50% {
+    right: 40%
+  }
+
+  60% {
+    right: 50%
+  }
+
+  70% {
+    right: 40%
+  }
+
+  80% {
+    right: 30%
+  }
+
+  90% {
+    right: 20%
+  }
+
+  100% {
+    right: 10%;
+  }
 }
 
 
-.alinhamento{
-  background-color: black;
+@keyframes mymovee {
+  0% {
+    left: 0%;
+  }
+
+  10% {
+    left: 10%;
+  }
+
+  20% {
+    left: 20%
+  }
+
+  30% {
+    left: 30%
+  }
+
+  40% {
+    left: 40%
+  }
+
+  50% {
+    left: 50%
+  }
+
+  60% {
+    left: 40%
+  }
+
+  70% {
+    left: 30%
+  }
+
+  80% {
+    left: 20%
+  }
+
+  90% {
+    left: 10%
+  }
+
+  100% {
+    left: 0%;
+  }
 }
