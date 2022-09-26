@@ -4,26 +4,32 @@
   background-color: black;
 }
 
-.imagens{
-  position: absolute;
+.imagens {
+  /*
+  position: fixed;*/
   display: flex;
-flex-direction: column;
-justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.direita{
-  background-image: url(./IMAGENS/imagem.svg);
+.direita {
   position: relative;
-  animation: mymove 8s infinite;
+  animation: mymove 5s infinite;
   margin-bottom: 1%;
-}
-.esquerda{
-  background-image: url(./IMAGENS/imagem.svg);
-  position: relative;
-  animation: mymovee 8s infinite;
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  animation-timing-function: linear;
+}
+
+.esquerda {
+  position: relative;
+  animation: mymovee 5s infinite;
   margin-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  animation-timing-function: linear;
 }
 
 @keyframes mymove {
@@ -40,35 +46,43 @@ justify-content: space-evenly;
   }
 
   30% {
-    right: 20%
+    right: 15%
   }
 
   40% {
-    right: 30%
-  }
-
-  50% {
-    right: 40%
-  }
-
-  60% {
-    right: 50%
-  }
-
-  70% {
-    right: 40%
-  }
-
-  80% {
-    right: 30%
-  }
-
-  90% {
     right: 20%
   }
 
+  50% {
+    right: 25%
+  }
+
+  60% {
+    right: 30%
+  }
+
+  70% {
+    right: 25%
+  }
+
+  80% {
+    right: 20%
+  }
+
+  85% {
+    right: 15%;
+  }
+
+  90% {
+    right: 10%
+  }
+
+  95% {
+    right: 5%;
+  }
+
   100% {
-    right: 10%;
+    right: 0%;
   }
 }
 
@@ -79,39 +93,47 @@ justify-content: space-evenly;
   }
 
   10% {
-    left: 10%;
+    left: 5%;
   }
 
   20% {
-    left: 20%
+    left: 10%
   }
 
   30% {
-    left: 30%
+    left: 15%
   }
 
   40% {
-    left: 40%
+    left: 20%
   }
 
   50% {
-    left: 50%
+    left: 25%
   }
 
   60% {
-    left: 40%
+    left: 30%
   }
 
   70% {
-    left: 30%
+    left: 25%
   }
 
   80% {
     left: 20%
   }
 
+  85% {
+    left: 15%
+  }
+
   90% {
     left: 10%
+  }
+
+  95% {
+    left: 5%;
   }
 
   100% {
